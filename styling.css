@@ -1,7 +1,8 @@
 
 .landing-page {
+    background-image: url("images/lowpoly.jpg");
+    background-size: cover;
     width: 100vw;
-    height: 100vh;
 }
 
 * {
@@ -38,8 +39,6 @@ ul {
     background-size: cover;
 }
 
-
-
 .cp-icon {
     margin-right: 40px;
     float: left;
@@ -56,7 +55,8 @@ p {
     font-weight: bolder;
     font-size: 42px;
 }
-.try-it-button:hover{
+
+.try-it-button:hover {
     border: none;
 }
 
@@ -68,7 +68,7 @@ p {
 }
 
 .try-it-button {
-    transition: all 4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: blueviolet;
     border: solid 2px blueviolet;
     background-color: transparent;
@@ -79,30 +79,131 @@ p {
     padding: 10px 40px;
 }
 
-.incloud-logo{
+.incloud-logo {
     z-index: 0;
-    position: relative;
-    bottom: 0;
-    left: -60px;
-}
-.incloud-batch{
-    z-index: 1;
     position: relative;
     bottom: 0;
     left: 0;
 }
-.text-box {
-    padding-top: 60px;
-    margin: 0 40px;
-    width: 24%;
+
+.incloud-batch {
+    z-index: 1;
     position: absolute;
-    right: 14vw;
-    top: 30%;
+    bottom: -20px;
+    left: -20px;
 }
 
-.img-box {
-    margin: 0 40px;
-    position: absolute;
-    left: 14vw;
-    top: 30%;
+.text-box {
+    padding: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 380px;
+    position: relative;
+}
+
+.vid-box {
+    padding: 4px 40px 4px 10px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    width: auto;
+}
+
+.all-content {
+    padding: 60px 10px 100px 10px;
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+@media (min-width: 801px) {
+    .incloud-batch {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width: 1026px) {
+    .all-content {
+        width: 100vw;
+        padding: 60px 0;
+    }
+
+    .vid-box {
+        transform: translate(-70vh);
+        width: auto;
+        padding: 0;
+        left: 50%;
+        right: 50%;
+        display: block;
+        margin: 20px auto 80px auto;
+    }
+
+    .text-box {
+        display: block;
+        margin: 34px auto;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .demo-button, .try-it-button {
+        float: none;
+        width: 90vw;
+        margin: 16px 10px;
+        position: relative;
+        display: block;
+    }
+
+    .description-text {
+        width: 260px;
+        margin: 0 0 40px 0;
+        display: block;
+        font-size: 16px;
+    }
+
+    .cp-icon {
+        transform: scale(0.85);
+        margin: 0;
+    }
+
+    .headline {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .headline {
+        font-size: 28px;
+    }
+
+    .vid-box {
+        transform: scale(0.85);
+        width: auto;
+        padding: 0;
+        left: 10px;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .incloud-logo {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .text-box {
+        transform: scale(0.7) translate(-30px);
+        display: block;
+        margin: 30px auto;
+    }
+
 }
