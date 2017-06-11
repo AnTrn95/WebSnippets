@@ -1,0 +1,6 @@
+ErrorDocument 403 "Upps something went wrong :/"
+<RequireAny>
+Require local
+Require ip 192.168.56.1
+Require ip 192.168.178.27
+</RequireAny>

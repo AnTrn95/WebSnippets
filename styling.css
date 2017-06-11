@@ -1,209 +1,539 @@
 
-.landing-page {
-    background-image: url("images/lowpoly.jpg");
-    background-size: cover;
-    width: 100vw;
-}
-
 * {
-    font-size: 23px;
-    font-family: sans-serif;
+    letter-spacing: -0.2px;
+/ / color: #212121;
+    font-family: sans-serif
 }
 
-body {
-    padding: 0;
-    margin: 0;
+tr td {
+    font-weight: bold;
+    color: white;
 }
 
 header {
-    background-color: #ffffff;
-    align-items: stretch;
+    padding: 0;
+    clear: both;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    background-image: url('image/bg-wood.jpg');
+    background-size: cover;
+    box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 4px 5px rgba(0, 0, 0, 0.4);
+    height: 60px;
 }
-
-li {
-    padding: 0 50px 0 50px;
-}
-
-ul {
-    margin-right: 120px;
-    padding: 5px 0;
-    list-style: none;
-    display: inline-flex;
-    position: absolute;
+#warenkorb-icon{
+    display: none;
+    z-index: 200;
+    background-image: url("image/cart-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    padding: 10%;
+    top: 10%;
     right: 0;
 }
-
-.bg {
-    width: 100%;
+.header-hl {
+    display: table;
+    margin: auto;
     height: 100%;
-    background-size: cover;
 }
 
-.cp-icon {
-    margin-right: 40px;
-    float: left;
-}
-
-p {
-    display: block;
-}
-
-.headline {
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    font-weight: bolder;
-    font-size: 42px;
-}
-
-.try-it-button:hover {
-    border: none;
-}
-
-.demo-button {
-    background-color: blueviolet;
-    border: solid 2px blueviolet;
-    float: left;
+a:link {
+    text-decoration: none;
     color: #ffffff;
 }
 
-.try-it-button {
-    transition: all 0.2s ease-in-out;
-    color: blueviolet;
-    border: solid 2px blueviolet;
+.overview-nav {
+    font-size: 22px;
+    font-weight: bold;
+    align-content: center;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+}
+
+nav li a:link {
+    transition: all 0.8s ease-out;
+    color: #5A352D;
+}
+
+nav ul li {
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
     background-color: transparent;
+    border: solid 2px #5A352D;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    border-left: solid 3px #ffffff;
+    border-right: solid 3px #ffffff;
+    padding: 12px 20px;
+    height: 100%;
+    background-color: #232323;
+    opacity: 0.95;
+    font-weight: bolder;
+    display: table;
+    position: relative;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: auto;
+}
+
+body {
+    background-image: url('image/bg.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+table td {
+    padding-left: 20px;
+}
+
+
+#blur-bg {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+
+.pizza-icon {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.pizza-name {
+    padding: 0 2rem;
+    margin-right: 2vw;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #A08159;
+}
+
+.order-button {
+    transition: all 0.2s ease-out;
     float: right;
 }
 
-.demo-button, .try-it-button {
-    padding: 10px 40px;
+nav li:hover, .delete-button:hover {
+    transition: all 0.2s ease-in-out;
+    color: #5A352D;
+    border-color: transparent;
 }
 
-.incloud-logo {
-    z-index: 0;
-    position: relative;
-    bottom: 0;
-    left: 0;
+button:hover {
+    transition: all 0.2s ease-in;
+    border: solid 2px #A08159;
+    color: #A08159;
+    background-color: transparent;
 }
 
-.incloud-batch {
-    z-index: 1;
+.pizza-row {
+    width: 30vw;
+    padding: 40px 20px 10px 40px;
+}
+
+.pizza-name {
+    color: #000000;
+    width: 20%;
     position: absolute;
-    bottom: -20px;
-    left: -20px;
+    left: 40%;
+    padding: 10% 16px;
+    font-weight: lighter;
 }
 
-.text-box {
-    padding: 4px;
+.pizza-price {
+    padding: 10% 0;
+    right: 0;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pizza-list {
+    margin-top: 8%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30vw;
     vertical-align: middle;
-    display: inline-block;
-    width: 380px;
-    position: relative;
+    position: absolute;
+    left: 4vw;
+    margin-left: 14px;
 }
 
-.vid-box {
-    padding: 4px 40px 4px 10px;
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
-    width: auto;
+select option {
+    color: #343434;
 }
 
-.all-content {
-    padding: 60px 10px 100px 10px;
-    width: 1000px;
-    height: 100%;
+select {
+    font-size: 18px;
     display: block;
+}
+
+.client-data {
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+}
+
+input {
+    font-size: 18px;
+    color: #000000;
+}
+
+button {
+    border: solid 2px #A08159;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2% 4%;
+    background-color: #A08159;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.new-order a:hover {
+    color: #5A352D;
+}
+
+.new-order:hover {
+    padding: 12px 30px;
+    transition: all 0.2s ease-in;
+    border: solid 2px #5A352D;
+    background-color: transparent;
+}
+
+.delete-button {
+    border: solid 2px #5A352D;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    color: #5A352D;
+}
+
+.sum {
+    font-weight: bold;
+    display: block;
+    float: right;
+}
+
+.warenkorb-section, select {
+    width: 38vw;
+}
+
+.warenkorb-section {
+    transform: translate(0, 0);
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+    visibility: visible;
+    vertical-align: middle;
+    display: table;
+    margin: 12% auto;
+}
+
+table tr th {
+    color: #ffffff;
+    padding-bottom: 1.8rem;
+}
+
+table tr td {
+    padding: 10px 32px;
+}
+
+.new-order {
+    padding: 12px 30px;
+    background-color: #A08159;
+    display: table;
     margin: auto;
-    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
 }
 
-@media (min-width: 801px) {
-    .incloud-batch {
-        position: absolute;
+*[class*=status] {
+    border-top: dashed 2px #cdcdcd;
+    box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 6px 10px rgba(0, 0, 0, 0.9);
+    padding: 50px 60px 100px 40px;
+    background: #000000;
+    opacity: 0.9;
+    margin: 6rem auto 60px auto;
+}
+
+.delivery-status {
+    display: table;
+}
+
+.client-info {
+    color: #efefef;
+    box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 6px 10px rgba(0, 0, 0, 0.9);
+    border-top: dashed 2px #cdcdcd;
+    padding: 40px 50px 60px 50px;
+    background: #000000;
+    opacity: 0.9;
+    display: table;
+    margin: 100px auto;
+}
+
+/*tablet view*/
+@media  (max-width:1240px) {
+    body {
+        overflow: auto;
+    }
+
+    table tr td {
+        margin: 0;
+        padding: 2px 4px;
+    }
+
+    section select {
+        font-size: 20px;
+    }
+
+    div .pizza-name, div .pizza-price {
+        font-size: 18px;
+    }
+
+    .pizza-list {
+        max-width: 300px;
+        width: 48vw;
         left: 0;
-        bottom: 0;
+        margin: 12% 0;
     }
 
-}
-
-@media (max-width: 1026px) {
-    .all-content {
-        width: 100vw;
-        padding: 60px 0;
+    .delete-button, .order-button {
+        width: 100%;
     }
 
-    .vid-box {
-        transform: translate(-70vh);
-        width: auto;
+    .delete-button {
+        margin: 6px auto;
+        display: table;
+    }
+
+    .warenkorb-section {
+        visibility: visible;
+        transform: translate(0, 0);
+        font-size: 20px;
         padding: 0;
-        left: 50%;
-        right: 50%;
-        display: block;
-        margin: 20px auto 80px auto;
+        margin: 14% 0 10% 0;
     }
 
-    .text-box {
-        display: block;
-        margin: 34px auto;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .demo-button, .try-it-button {
-        float: none;
-        width: 90vw;
-        margin: 16px 10px;
-        position: relative;
-        display: block;
+    .client-data {
+        font-size: 20px;
     }
 
-    .description-text {
-        width: 260px;
-        margin: 0 0 40px 0;
-        display: block;
+    .order-button {
+        margin: 20px auto;
+        display: table;
+    }
+
+    div button {
+        padding: 8px;
         font-size: 16px;
     }
 
-    .cp-icon {
-        transform: scale(0.85);
+    div table, div table tr, div table tr td {
+        padding: 1vw;
         margin: 0;
     }
 
-    .headline {
-        padding: 0;
-        margin-bottom: 20px;
+    .pizza-name {
+        padding-left: 12%;
+    }
+
+    .pizza-icon {
+        margin: 0;
+        width: 90px;
+        height: auto;
     }
 
 }
 
-@media (max-width: 480px) {
-
-    .headline {
-        font-size: 28px;
+@media (max-width:568px) {
+    * {
+        letter-spacing: 0;
+        font-size: 18px;
     }
 
-    .vid-box {
-        transform: scale(0.85);
-        width: auto;
-        padding: 0;
-        left: 10px;
+    h1 {
+        display: table;
+        padding: 20px 8%;
+    }
+
+    h3 {
+        text-align: center;
+        color: #ffffff;
+        font-weight: normal;
+        font-size: 15px;
+        margin: 5% 0 1% 0;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .sum-order {
+        font-weight: bold;
+    }
+
+    .client-info {
+        margin-top: 60px;
+    }
+
+    .new-order {
+        font-size: 12px;
+    }
+
+    .client-data {
+        display: table;
+        margin: 4% auto 0 auto;
+    }
+
+    .client-data, .button-group {
+        width: 70%;
+    }
+
+    .button-group {
+        left: 0;
         right: 0;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .pizza-row {
+        margin: 0;
+        clear: both;
+        display: table-row;
+    }
+
+    .pizza-list {
+        left: 0;
+        right: 0;
+        top: 19vh;
+        width: 100%;
+        display: table-row;
+        margin: 0 auto;
+        position: relative;
+        height: auto;
+    }
+
+    .pizza-icon {
+        width: 25%;
+        min-width: 80px;
+        height: auto;
+        padding-left: 4%;
+    }
+
+    body [class*=status], body table [class*=status] {
+        width: 100vw;
+        opacity: 1.0;
+        margin-top: 60px;
+        padding: 10px;
+        height: 60vh;
+    }
+
+    body table tr th, body form table tr th {
+        padding-bottom: 2px;
+        font-size: 12px;
+    }
+
+    body table tr td, body form table tr td {
+        padding: 4px;
+    }
+
+    .order-button, .order-button:hover {
+        border: solid 1px #A08159;
+    }
+
+    .delete-button {
+        color: #ffffff;
+        border: solid 1px #ffffff;
+    }
+
+    .delete-button, .order-button {
+        height: 5vh;
+        min-height: 46px;
+    }
+
+    .sum {
+        float: none;
+        left: 0;
+        right: 0;
+        font-weight: lighter;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: 2%;
+        color: #A08159;
+        text-align: center;
+    }
+
+    .delete-button:hover {
+        color: #ffffff;
+    }
+
+    .warenkorb-section {
+        transform: translate(0,-100%);
+        visibility: hidden;
+        z-index: 10;
+        min-height: 60vw;
+        min-width: 100vw;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: rgba(0, 0, 0, 0.7) 0 40px 50px;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 2% 0 8% 0;
+        height: auto;
+        border-bottom: dashed 1px #ffffff;
+    }
+
+    .pizza-name {
+        padding-left: 1vw;
+        font-size: 12px;
+    }
+    #warenkorb-icon {
+        display: inline-block;
+    }
+    .pizza-price {
+        font-size: 16px;
+        padding-right: 8%;
+    }
+
+    div {
+        display: block;
+    }
+
+    section select, body .warenkorb-section {
+        width: 70vw;
         display: block;
         margin: 0 auto;
     }
 
-    .incloud-logo {
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-
-    .text-box {
-        transform: scale(0.7) translate(-30px);
-        display: block;
-        margin: 30px auto;
+    div table {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
     }
 
 }

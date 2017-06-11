@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, intial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="Styling.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="showCart.js"></script>
+    <title>Pizzaservice</title>
+</head>
+<body onresize="refreshContent()">
+
+
+<div id="blur-bg"></div>
+
+<header><h1>Kunde</h1></header>
+
+<!-- pizzalist -->
+<div id="pizza-list" class="pizza-list">
+    <div class="pizza-row" onclick="calcPrice(this)" data-name="Margherita" data-price="4.00">
+        <img class="pizza-icon"
+             src="image/pizza_icon.png"
+             alt="select a pizza" width="100"
+             height="100">
+
+        <label class="pizza-name" data-pizza=""> Margherita</label>
+        <label class="pizza-price" data-price="">4.00€ </label>
+    </div>
+
+    <div class="pizza-row" onclick="calcPrice(this)" data-name="Salami" data-price="4.50">
+        <img class="pizza-icon"
+             src="image/pizza_icon.png"
+             alt="select a pizza" width="100"
+             height="100">
+        <label class="pizza-name" data-pizza="">Salami</label>
+        <label class="pizza-price" data-price="">4.50€</label>
+    </div>
+
+    <div class="pizza-row" onclick="calcPrice(this)" data-name="Hawaii" data-price="5.50">
+        <img class="pizza-icon"
+             src="image/pizza_icon.png"
+             alt="select a pizza" width="100"
+             height="100">
+        <label class="pizza-name" data-pizza="">Hawaii</label>
+        <label class="pizza-price" data-price="">5.50€</label>
+    </div>
+</div>
+
+<span id="warenkorb-icon" onclick="showCart()"></span>
+    <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="formid" method="get" accept-charset="UTF-8">
+        <!--Warenkorb-->
+        <section id="warenkorb" class="warenkorb-section" title="">
+
+            <h3>Warenkorb</h3>
+            <select title="Warenkorb" id="pizzen" name="pizzen[]" size="4" multiple>
+                <!-- <option>test</option> -->
+            </select>
+            <label id="sum" class="sum" data-sum>0€</label>
+            <input class="client-data" title="clients" type="text" placeholder="Name, Adresse" name="Kundendaten"
+                   required/>
+
+            <br/>
+            <div class="button-group">
+                <button type="button" id="delete-all" onclick="delete_all()" class="delete-button">Alle Löschen
+                </button>
+                <button type="button" id="delete-selection" onclick="delete_selection()" class="delete-button">
+                    Auswahl
+                    Löschen
+                </button>
+
+                <!--Schickt Bestellung ab-->
+                <button class="order-button" type="submit" onclick="document.forms['formid'].submit();">Bestellen
+                </button>
+            </div>
+        </section>
+    </form>
+</body>
+</html>

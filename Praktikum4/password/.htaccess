@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Authentification"
+AuthUserFile C:\pw.sec
+Require valid-user
