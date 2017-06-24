@@ -1,6 +1,8 @@
 /**
  * Created by TrAn on 22.05.2017.
  */
+
+
 window.onresize = function(event)
 {
     document.location.reload(true);

@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c343ea9-c627-48dc-81ca-0557b7e28cbd" name="Default" comment="" />
+    <list default="true" id="9c343ea9-c627-48dc-81ca-0557b7e28cbd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/IdeaWin32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/IdeaWin64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/Uninstall.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/WinProcessListHelper.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/focuskiller.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/focuskiller64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/fsnotifier.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/fsnotifier64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/jumplistbridge.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/jumplistbridge64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/phpstorm.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/phpstorm64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/restarter.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/runnerw.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/vistalauncher.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/yjpagent.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/yjpagent64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/IdeaWin32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/IdeaWin64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/Uninstall.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/WinProcessListHelper.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/focuskiller.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/focuskiller64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/fsnotifier.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/fsnotifier64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/jumplistbridge.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/jumplistbridge64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phpstorm.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phpstorm64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/restarter.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/runnerw.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/vistalauncher.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/yjpagent.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/yjpagent64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Baecker.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlockTemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fahrer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kunde.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pizzaservice.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/append.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/format.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/idea.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/inspect.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/log.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/phpstorm.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/phpstorm.exe.vmoptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Praktikum4/bin/phpstorm64.exe.vmoptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/append.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/format.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/idea.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/inspect.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/log.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phpstorm.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phpstorm.exe.vmoptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phpstorm64.exe.vmoptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/EWA_SS17_Praktikum_Mo4.iml" afterPath="$PROJECT_DIR$/.idea/EWA_SS17_Praktikum_Mo4.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pizzaservice.html" afterPath="$PROJECT_DIR$/Pizzaservice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/showCart.js" afterPath="$PROJECT_DIR$/showCart.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,71 +78,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Styling.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Styling.css">
+      <file leaf-file-name="Baecker.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Baecker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8694">
-              <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="108" column="13" lean-forward="true" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="Fahrer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fahrer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="166">
+              <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Praktikum4/sel-IP/.htaccess">
+      <file leaf-file-name="Kunde.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kunde.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="145">
+              <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Praktikum4/password/.htaccess">
+      <file leaf-file-name="Pizzaservice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pizzaservice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Praktikum4/public/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Praktikum4/private/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="823">
+              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -88,8 +131,48 @@
       <file leaf-file-name="Baecker.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Baecker.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="147">
               <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pizzaservice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pizzaservice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showCart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/showCart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kunde.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kunde.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -108,12 +191,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new-order a:hover</find>
-      <find>li</find>
-      <find>pizza-i</find>
-      <find>pizza</find>
-      <find>pizza-row</find>
-      <find>pizza-icon</find>
       <find>:hover</find>
       <find>pizza-name</find>
       <find>nav</find>
@@ -138,7 +215,23 @@
       <find>pizza-list</find>
       <find>translate</find>
       <find>warenkorb</find>
+      <find>require</find>
+      <find>include</find>
+      <find>generateView</find>
+      <find>PageTemplate</find>
+      <find>conn</find>
+      <find>quantity</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Baecker</replace>
+      <replace>index</replace>
+      <replace>Fahrer</replace>
+      <replace>Kunde</replace>
+      <replace>Pizzaservice</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -148,9 +241,6 @@
         <option value="$PROJECT_DIR$/httpd.conf.txt" />
         <option value="$PROJECT_DIR$/Baecker.html" />
         <option value="$PROJECT_DIR$/Fahrer.html" />
-        <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/Pizzaservice.html" />
-        <option value="$PROJECT_DIR$/showCart.js" />
         <option value="$PROJECT_DIR$/Styling.css" />
         <option value="$PROJECT_DIR$/access.htaccess" />
         <option value="$PROJECT_DIR$/Praktikum4/private/.htaccess" />
@@ -159,6 +249,15 @@
         <option value="$PROJECT_DIR$/Praktikum4/sel-IP/.htaccess" />
         <option value="$PROJECT_DIR$/Praktikum4/password/ewa-pw" />
         <option value="$PROJECT_DIR$/Praktikum4/password/.htaccess" />
+        <option value="$PROJECT_DIR$/Baecker.php" />
+        <option value="$PROJECT_DIR$/Fahrer.php" />
+        <option value="$PROJECT_DIR$/Pizzaservice.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Kunde.php" />
+        <option value="$PROJECT_DIR$/Page.php" />
+        <option value="$PROJECT_DIR$/showCart.js" />
+        <option value="$PROJECT_DIR$/Pizzaservice.html" />
+        <option value="$PROJECT_DIR$/script.js" />
       </list>
     </option>
   </component>
@@ -168,10 +267,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP">
+    <include_path>
+      <path value="C:\xampp\php" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
-    <option name="y" value="26" />
-    <option name="width" value="1924" />
+    <option name="x" value="-11" />
+    <option name="y" value="17" />
+    <option name="width" value="1897" />
     <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
@@ -189,121 +293,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
+              <option name="myItemId" value="WebSnippets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="WebSnippets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
+              <option name="myItemId" value="WebSnippets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Praktikum4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Praktikum4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sel-IP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Praktikum4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Praktikum4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Praktikum4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="password" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EWA_SS17_Praktikum_Mo4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="WebSnippets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -311,16 +329,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRISPR" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anhat\Desktop\Git\SS17_4_Semester\WebSnippets" />
+      <recent name="C:\Users\anhat\Desktop\Git\SS17_4_Semester\WebSnippets\Praktikum4" />
       <recent name="C:\Users\TrAn\WebstormProjects\EWA_SS17_Praktikum_Mo4\Praktikum4\password" />
       <recent name="C:\Users\TrAn\WebstormProjects\EWA_SS17_Praktikum_Mo4\Praktikum4\sel-IP" />
       <recent name="C:\Users\TrAn\WebstormProjects\EWA_SS17_Praktikum_Mo4\Praktikum4\private" />
-      <recent name="C:\Users\TrAn\WebstormProjects\EWA_SS17_Praktikum_Mo4\Praktikum4\public" />
-      <recent name="C:\Users\TrAn\WebstormProjects\EWA_SS17_Praktikum_Mo4\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,10 +355,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -347,12 +364,6 @@
       <working-dir value="" />
       <envs />
       <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -367,10 +378,19 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -444,19 +464,22 @@
       <workItem from="1497117680755" duration="3288000" />
       <workItem from="1497174562258" duration="5167000" />
       <workItem from="1497182785704" duration="25000" />
+      <workItem from="1498311039536" duration="12614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127921000" />
+    <option name="totallyTimeSpent" value="140535000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="26" width="1924" height="1045" extended-state="0" />
+    <frame x="-11" y="17" width="1897" height="1045" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27703783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28100052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -484,65 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Fahrer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5124">
-          <caret line="244" column="21" lean-forward="true" selection-start-line="244" selection-start-column="21" selection-end-line="244" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pizzaservice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Baecker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kunde.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fahrer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5313">
-          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pizzaservice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Baecker.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
@@ -565,7 +529,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
+    <entry file="file://$PROJECT_DIR$/styling.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2373">
           <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
@@ -602,7 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
+    <entry file="file://$PROJECT_DIR$/styling.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
           <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
@@ -639,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
+    <entry file="file://$PROJECT_DIR$/styling.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -676,13 +640,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -698,13 +656,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/httpd.conf.txt" />
-    <entry file="file://$PROJECT_DIR$/Kunde.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Fahrer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -720,35 +671,6 @@
     <entry file="file://$PROJECT_DIR$/image/cart-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pizzaservice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showCart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Baecker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
@@ -792,15 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styling.css">
+    <entry file="file://$PROJECT_DIR$/styling.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8694">
           <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
@@ -828,8 +742,120 @@
     <entry file="file://$PROJECT_DIR$/Praktikum4/password/pw.sec" />
     <entry file="file://$PROJECT_DIR$/Praktikum4/password/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="63">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kunde.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fahrer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pizzaservice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kunde.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Baecker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="108" column="13" lean-forward="true" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Baecker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pizzaservice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showCart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding />
         </state>
       </provider>

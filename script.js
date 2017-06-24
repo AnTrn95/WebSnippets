@@ -2,7 +2,18 @@
  * Created by TrAn on 06.05.2017.
  */
 
+    function selectAll()
+    {
+        var selectBox = document.getElementById("pizzen");
+
+        for (var i = 0; i < selectBox.options.length; i++)
+        {
+            selectBox.options[i].selected = true;
+        }
+    }
+
 function Pizza(name, price, quantity) {
+
     return {
         'name': name,
         'price': price,

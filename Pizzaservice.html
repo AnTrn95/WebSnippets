@@ -46,13 +46,14 @@
     </div>
 </div>
 
+
 <span id="warenkorb-icon" onclick="showCart()"></span>
-    <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="formid" method="get" accept-charset="UTF-8">
+    <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="formid" method="get" accept-charset="UTF-8" onsubmit="selectAll()">
         <!--Warenkorb-->
         <section id="warenkorb" class="warenkorb-section" title="">
 
             <h3>Warenkorb</h3>
-            <select title="Warenkorb" id="pizzen" name="pizzen[]" size="4" multiple>
+            <select title="Warenkorb" id="pizzen" name="pizzen[]" size="4" data-sum multiple>
                 <!-- <option>test</option> -->
             </select>
             <label id="sum" class="sum" data-sum>0€</label>
@@ -69,7 +70,7 @@
                 </button>
 
                 <!--Schickt Bestellung ab-->
-                <button class="order-button" type="submit" onclick="document.forms['formid'].submit();">Bestellen
+                <button class="order-button" type="submit" onclick="document.forms['formid'].submit(); ">Bestellen
                 </button>
             </div>
         </section>
