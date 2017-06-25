@@ -1,7 +1,25 @@
 <?php // UTF-8 marker äöüÄÖÜß€
 
+/**
+ * Class Baker for the exercises of the EWA lecture
+ * Demonstrates use of PHP including class and OO.
+ * Implements Zend coding standards.
+ * Generate documentation with Doxygen or phpdoc
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Baker
+ * @author   Bernhard Kreling, <b.kreling@fbi.h-da.de>
+ * @author   Ralf Hahn, <ralf.hahn@h-da.de>
+ * @license  http://www.h-da.de  none
+ * @Release  1.2
+ * @link     http://www.fbi.h-da.de
+ */
 
+// to do: change name 'Baker' throughout this file
 require_once './Page.php';
+require_once './BaeckerStatusBlock.php';
 
 /**
  * This is a template for top level classes, which represent
@@ -14,8 +32,9 @@ require_once './Page.php';
  * @author   Bernhard Kreling, <b.kreling@fbi.h-da.de>
  * @author   Ralf Hahn, <ralf.hahn@h-da.de>
  */
-class Baecker extends Page
+class Baker extends Page
 {
+    private $status;
     // to do: declare reference variables for members 
     // representing substructures/blocks
 
@@ -26,9 +45,12 @@ class Baecker extends Page
      *
      * @return none
      */
-    protected function __construct()
+    public function __construct()
     {
         parent::__construct();
+
+        $this->status= new BaeckerStatusBlock($this->_database);
+
         // to do: instantiate members representing substructures/blocks
     }
 
@@ -39,7 +61,7 @@ class Baecker extends Page
      *
      * @return none
      */
-    protected function __destruct()
+    public function __destruct()
     {
         parent::__destruct();
     }
@@ -67,10 +89,9 @@ class Baecker extends Page
     protected function generateView()
     {
         $this->getViewData();
-        $this->generatePageHeader('Bäcker | Status');
-
-        include('Baecker.html');
-
+        $this->generatePageHeader('Baker | Menu');
+        include('Baker.html');
+        $this->status->generateView('pizza-list');
         // to do: call generateView() for all members
         // to do: output view of this page
         $this->generatePageFooter();
@@ -85,11 +106,14 @@ class Baecker extends Page
      *
      * @return none
      */
-    protected function processReceivedData()
+    public function processReceivedData()
     {
         parent::processReceivedData();
-        // to do: call processReceivedData() for all members
+
+        $this->status->processReceivedData();
+
     }
+
 
     /**
      * This main-function has the only purpose to create an instance
@@ -103,11 +127,19 @@ class Baecker extends Page
      *
      * @return none
      */
+    public static function notify()
+    {
+        $page = new Baker();
+
+        $page->processReceivedData();
+    }
+
+
     public static function main()
     {
         try {
-            $page = new Baecker();
-            $page->processReceivedData();
+            $page = new Baker();
+
             $page->generateView();
         } catch (Exception $e) {
             header("Content-type: text/plain; charset=UTF-8");
@@ -116,9 +148,10 @@ class Baecker extends Page
     }
 }
 
+
 // This call is starting the creation of the page. 
 // That is input is processed and output is created.
-Baecker::main();
+Baker::main();
 
 // Zend standard does not like closing php-tag!
 // PHP doesn't require the closing tag (it is assumed when the file ends). 

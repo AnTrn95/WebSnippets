@@ -80,7 +80,7 @@ class index extends Page
             <a href='Kunde.php'>Kunde</a>
         </li>
         <li>
-            <a href='Baecker.php'>Pizzabäcker</a>
+            <a href='Baker.php'>Pizzabäcker</a>
         </li>
         <li>
             <a href='Fahrer.php'>Fahrer</a>

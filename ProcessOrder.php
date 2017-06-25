@@ -1,5 +1,5 @@
 <?php // UTF-8 marker äöüÄÖÜß€
-include('Pizzaservice.php');
+include_once'Pizzaservice.php';
 if (!empty($_POST["pizzen"]) && !empty($_POST["kundendaten"])) {
     Pizzaservice::notify();
 }
