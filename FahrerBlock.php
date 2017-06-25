@@ -1,11 +1,11 @@
 <?php // UTF-8 marker äöüÄÖÜß€
-include_once('./Baker.php');
+include_once('./Fahrer.php');
 
-if(!empty($_GET)) {
-    Baker::notify();
-}
 
-class BaeckerStatusBlock        // to do: change name of class
+Fahrer::notify();
+
+
+class FahrerBlock        // to do: change name of class
 {
 
     // --- ATTRIBUTES ---
@@ -118,12 +118,11 @@ class BaeckerStatusBlock        // to do: change name of class
 
             if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 mysqli_query($this->_database, "update BestelltePizza set Status='$status' where PizzaID= $p_id");
-
+                print_r($p_id . ' ' . $status);
             }
             // to do: call processData() for all members
         }
     }
-
 }
 // Zend standard does not like closing php-tag!
 // PHP doesn't require the closing tag (it is assumed when the file ends). 

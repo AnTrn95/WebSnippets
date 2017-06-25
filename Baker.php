@@ -18,8 +18,8 @@
  */
 
 // to do: change name 'Baker' throughout this file
-require_once './Page.php';
-require_once './BaeckerStatusBlock.php';
+include_once './Page.php';
+include_once './BaeckerStatusBlock.php';
 
 /**
  * This is a template for top level classes, which represent
