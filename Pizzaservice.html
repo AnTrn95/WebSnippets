@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"  content="width=device-width, intial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="Styling.css">
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="showCart.js"></script>
-    <title>Pizzaservice</title>
-</head>
-<body onresize="refreshContent()">
-
+<body>
+<div class="bg"></div>
 
 <div id="blur-bg"></div>
 
 <header><h1>Kunde</h1></header>
 
-<!-- pizzalist -->
+<!-- pizzalist
 <div id="pizza-list" class="pizza-list">
     <div class="pizza-row" onclick="calcPrice(this)" data-name="Margherita" data-price="4.00">
         <img class="pizza-icon"
@@ -44,8 +34,9 @@
         <label class="pizza-name" data-pizza="">Hawaii</label>
         <label class="pizza-price" data-price="">5.50€</label>
     </div>
-</div>
 
+</div>
+-->
 
 <span id="warenkorb-icon" onclick="showCart()"></span>
     <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" id="formid" method="get" accept-charset="UTF-8" onsubmit="selectAll()">
@@ -76,4 +67,3 @@
         </section>
     </form>
 </body>
-</html>

@@ -18,6 +18,7 @@
 
 // to do: change name 'Pizzaservice' throughout this file
 require_once './Page.php';
+require_once './PizzaMenuBlock.php';
 
 /**
  * This is a template for top level classes, which represent 
@@ -33,6 +34,7 @@ require_once './Page.php';
  */
 class Pizzaservice extends Page
 {
+    private $pizza_menu;
     // to do: declare reference variables for members 
     // representing substructures/blocks
     
@@ -46,6 +48,8 @@ class Pizzaservice extends Page
     protected function __construct() 
     {
         parent::__construct();
+
+        $this->pizza_menu= new PizzaMenuBlock($this->_database);
         // to do: instantiate members representing substructures/blocks
     }
     
@@ -84,8 +88,9 @@ class Pizzaservice extends Page
     protected function generateView() 
     {
         $this->getViewData();
-        $this->generatePageHeader('to do: change headline');
+        $this->generatePageHeader('Pizzaservice | Menu');
         include('Pizzaservice.html');
+        $this->pizza_menu->generateView('pizza-list');
         // to do: call generateView() for all members
         // to do: output view of this page
         $this->generatePageFooter();

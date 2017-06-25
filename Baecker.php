@@ -68,7 +68,7 @@ class Baecker extends Page
     protected function generateView() 
     {
         $this->getViewData();
-        $this->generatePageHeader('Bäcker');
+        $this->generatePageHeader('Bäcker | Status');
 
         include('Baecker.html');
 

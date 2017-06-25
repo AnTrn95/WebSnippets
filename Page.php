@@ -1,4 +1,10 @@
 <?php // UTF-8 marker äöüÄÖÜß€
+/**
+ * Created by PhpStorm.
+ * User: anhat
+ * Date: 24.06.2017
+ * Time: 23:43
+ */
 
 /**
  * This abstract class is a common base class for all
@@ -9,100 +15,102 @@
  * Each inherited class can use these operations for accessing the db
  * and for creating the generic parts of a HTML-page.
  *
- * @author   Bernhard Kreling, <b.kreling@fbi.h-da.de>
- * @author   Ralf Hahn, <ralf.hahn@h-da.de>
  */
 abstract class Page
 {
 // --- ATTRIBUTES ---
 
-/**
- * Reference to the MySQLi-Database that is
- * accessed by all operations of the class.
- */
-protected $_database = null;
+    /**
+     * Reference to the MySQLi-Database that is
+     * accessed by all operations of the class.
+     */
+    protected $_database = null;
 
 // --- OPERATIONS ---
 
-/**
- * Connects to DB and stores
- * the connection in member $_database.
- * Needs name of DB, user, password.
- *
- * @return none
- */
-protected function __construct()
-{
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbName= "ewass17";
+    /**
+     * Connects to DB and stores
+     * the connection in member $_database.
+     * Needs name of DB, user, password.
+     *
+     * @return none
+     */
+    protected function __construct()
+    {
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbName = "ewass17";
 // Create connection
-$this->_database = new mysqli($servername, $username, $password, $dbName); /* to do: create instance of class MySQLi */;
+        $this->_database = new mysqli($servername, $username, $password, $dbName); /* to do: create instance of class MySQLi */;
 
 // Check connection
-if ($this->_database->connect_error) {
-    die("Connection failed: " . $this->_database->connect_error);
-}
-echo "Connected to database";
+        if ($this->_database->connect_error) {
+            die("Connection failed: " . $this->_database->connect_error);
+        }
+        // echo "";
 
-}
+    }
 
-/**
-* Closes the DB connection and cleans up
-*
-* @return none
-*/
-protected function __destruct()
-{
+    /**
+     * Closes the DB connection and cleans up
+     *
+     * @return none
+     */
+    protected function __destruct()
+    {
 // to do: close database
-    $this->_database->close();
-}
+        $this->_database->close();
+    }
 
-/**
-* Generates the header section of the page.
-* i.e. starting from the content type up to the body-tag.
-* Takes care that all strings passed from outside
-* are converted to safe HTML by htmlspecialchars.
-*
-* @param $headline $headline is the text to be used as title of the page
-*
-* @return none
-*/
-protected function generatePageHeader($headline = "")
-{
-$headline = htmlspecialchars($headline);
-header("Content-type: text/html; charset=UTF-8");
+    /**
+     * Generates the header section of the page.
+     * i.e. starting from the content type up to the body-tag.
+     * Takes care that all strings passed from outside
+     * are converted to safe HTML by htmlspecialchars.
+     *
+     * @param $headline $headline is the text to be used as title of the page
+     *
+     * @return none
+     */
+    protected function generatePageHeader($headline = "")
+    {
+        $headline = htmlspecialchars($headline);
+        header("Content-type: text/html; lang='de'; charset=utf-8; name='viewport'; content='width=device-width, intial-scale=1, maximum-scale=1;");
+        echo"<title>$headline</title>";
+        echo "<link rel='stylesheet' type='text/css' href='styling.css'>\n";
+        echo "<script type='text/javascript' src='script.js'></script>\n";
+        echo "<script type='text/javascript' src='showCart.js'></script>\n";
 
 // to do: output common beginning of HTML code
 // including the individual headline
-}
+    }
 
-/**
-* Outputs the end of the HTML-file i.e. /body etc.
-*
-* @return none
-*/
-protected function generatePageFooter()
-{
+    /**
+     * Outputs the end of the HTML-file i.e. /body etc.
+     *
+     * @return none
+     */
+    protected function generatePageFooter()
+    {
 // to do: output common end of HTML code
-}
+    }
 
-/**
-* Processes the data that comes via GET or POST i.e. CGI.
-* If every page is supposed to do something with submitted
-* data do it here. E.g. checking the settings of PHP that
-* influence passing the parameters (e.g. magic_quotes).
-*
-* @return none
-*/
-protected function processReceivedData()
-{
-if (get_magic_quotes_gpc()) {
-throw new Exception
-("Bitte schalten Sie magic_quotes_gpc in php.ini aus!");
-}
-}
+    /**
+     * Processes the data that comes via GET or POST i.e. CGI.
+     * If every page is supposed to do something with submitted
+     * data do it here. E.g. checking the settings of PHP that
+     * influence passing the parameters (e.g. magic_quotes).
+     *
+     * @return none
+     */
+    protected function processReceivedData()
+    {
+        if (get_magic_quotes_gpc()) {
+            throw new Exception
+            ("Bitte schalten Sie magic_quotes_gpc in php . ini aus!");
+        }
+    }
 } // end of class
 
 // Zend standard does not like closing php-tag!

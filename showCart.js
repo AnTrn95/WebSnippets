@@ -16,7 +16,7 @@ function showCart() {
     cart.style.visibility = "visible";
     cart.style.transform = "translate(0,0)";
     blurry_bg.style.display = "inline-block";
-    list_bg.style.filter = "blur(5px)";
+    list_bg.style.filter = "blur(2px)";
     cart_icon.style.visibility = "hidden";
     /*close modal when bg is clicked*/
     blurry_bg.onclick = function ()

@@ -27,7 +27,7 @@
  * @author   Ralf Hahn, <ralf.hahn@h-da.de> 
 */
  
-class BlockTemplate        // to do: change name of class
+class PizzaMenuBlock        // to do: change name of class
 {
     // --- ATTRIBUTES ---
 
@@ -36,7 +36,7 @@ class BlockTemplate        // to do: change name of class
      * accessed by all operations of the class.
      */
     protected $_database = null;
-    
+    private $result;
     // to do: declare reference variables for members 
     // representing substructures/blocks
     
@@ -54,6 +54,7 @@ class BlockTemplate        // to do: change name of class
     {
         $this->_database = $database;
         // to do: instantiate members representing substructures/blocks
+
     }
 
     /**
@@ -65,6 +66,8 @@ class BlockTemplate        // to do: change name of class
     protected function getViewData()
     {
         // to do: fetch data for this view from the database
+        $this->result = mysqli_query($this->_database, "Select * from angebot");
+
     }
     
     /**
@@ -79,12 +82,31 @@ class BlockTemplate        // to do: change name of class
     public function generateView($id = "") 
     {
         $this->getViewData();
+        $name= null;
+        $file_path='image/';
+        $file= null;
+        $price= null;
+
+        echo "<div id='pizza-list' class='pizza-list'>\n";
+        while($row = mysqli_fetch_assoc($this->result)){
+            $name= $row['PizzaName'];
+            $file = $file_path . $row['Bilddatei'];
+            $price= $row['Preis'] . ' €';
+
+          echo "<div class='pizza-row' onclick='calcPrice(this)' data-name=$name data-price=$price>\n";
+          echo "<img class='pizza-icon' src=$file alt='select a pizza' width='100' height='100'>\n";
+        echo "<label class='pizza-name' data-pizza=$name>$name</label>\n";
+        echo "<label class='pizza-price' data-price=$price>$price</label></div>\n";
+        }
+        echo "</div>\n";
+/*
         if ($id) {
             $id = "id=\"$id\"";
         }
         echo "<div $id>\n";
         // to do: call generateView() for all members
         echo "</div>\n";
+*/
     }
 
 

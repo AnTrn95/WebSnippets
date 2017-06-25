@@ -20,18 +20,18 @@ header {
     overflow: hidden;
     background-image: url('image/bg-wood.jpg');
     background-size: cover;
-    box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 4px 10px rgba(0, 0, 0, 0.4);
     height: 60px;
 }
 #warenkorb-icon{
     display: none;
-    z-index: 200;
+    z-index: 100;
     background-image: url("image/cart-icon.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
-    padding: 10%;
-    top: 10%;
+    padding: 2rem;
+    top: .3rem;
     right: 0;
 }
 .header-hl {
@@ -55,7 +55,7 @@ a:link {
     top: 160px;
 }
 
-nav li a:link {
+a:visited, nav li a:link {
     transition: all 0.8s ease-out;
     color: #5A352D;
 }
@@ -92,10 +92,24 @@ h1 {
 }
 
 body {
-    background-image: url('image/bg.jpg');
-    background-size: cover;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* supported by Chrome and Opera */
     margin: 0;
     padding: 0;
+}
+.bg{
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/bg.jpg');
+    background-size: cover;
 }
 
 table td {
@@ -113,13 +127,15 @@ table td {
 }
 
 .pizza-icon {
-    padding-top: 10px;
+    align-self: center;
     cursor: pointer;
 }
 
 .pizza-name {
-    padding: 0 2rem;
-    margin-right: 2vw;
+    align-self: center;
+    line-height: 1.2rem;
+    padding: 0;
+    margin-right: 0;
     font-weight: bolder;
     font-size: 24px;
     color: #A08159;
@@ -144,36 +160,45 @@ button:hover {
 }
 
 .pizza-row {
-    width: 30vw;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 24rem;
+    height: 8rem;
     padding: 40px 20px 10px 40px;
 }
 
 .pizza-name {
+    width: 6rem;
+    text-align: left;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
     color: #000000;
-    width: 20%;
-    position: absolute;
-    left: 40%;
-    padding: 10% 16px;
-    font-weight: lighter;
-}
-
-.pizza-price {
-    padding: 10% 0;
-    right: 0;
-    position: absolute;
-    font-size: 24px;
     font-weight: bold;
 }
 
+.pizza-price {
+    text-align: right;
+    align-self: center;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 .pizza-list {
-    margin-top: 8%;
+    z-index: 3;
+    vertical-align: middle;
+    margin: 8rem 6rem;
     display: inline-flex;
     flex-direction: column;
-    width: 30vw;
-    vertical-align: middle;
-    position: absolute;
-    left: 4vw;
-    margin-left: 14px;
+    justify-content: center;
+    position: relative;
+
 }
 
 select option {
@@ -236,11 +261,11 @@ button {
 }
 
 .warenkorb-section {
+    position: fixed;
     transform: translate(0, 0);
     transition: all 0.2s ease-in-out;
-    position: absolute;
     right: 10%;
-    z-index: -1;
+    z-index: 1;
     visibility: visible;
     vertical-align: middle;
     display: table;
@@ -307,14 +332,19 @@ table tr td {
     }
 
     div .pizza-name, div .pizza-price {
-        font-size: 18px;
+        font-size: 16px;
     }
-
+    .pizza-price, .pizza-name{
+       font-size: 14px;
+    }
+    .pizza-row{
+        width: 18rem;
+    }
     .pizza-list {
         max-width: 300px;
         width: 48vw;
         left: 0;
-        margin: 12% 0;
+        margin: 6rem 1rem;
     }
 
     .delete-button, .order-button {
@@ -353,9 +383,6 @@ table tr td {
         margin: 0;
     }
 
-    .pizza-name {
-        padding-left: 12%;
-    }
 
     .pizza-icon {
         margin: 0;
@@ -365,13 +392,13 @@ table tr td {
 
 }
 
-@media (max-width:568px) {
+@media (max-width:680px) {
     * {
         letter-spacing: 0;
-        font-size: 18px;
     }
 
     h1 {
+        font-size: 14px;
         display: table;
         padding: 20px 8%;
     }
@@ -380,7 +407,7 @@ table tr td {
         text-align: center;
         color: #ffffff;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 12px;
         margin: 5% 0 1% 0;
     }
 
@@ -392,6 +419,10 @@ table tr td {
         font-size: 13px;
     }
 
+    .pizza-row{
+        margin-top: 0;
+        padding-top:0;
+    }
     .sum-order {
         font-weight: bold;
     }
@@ -420,12 +451,20 @@ table tr td {
         margin: 0 auto;
     }
 
-    .pizza-row {
-        margin: 0;
-        clear: both;
-        display: table-row;
+.pizza-row{
+    justify-self: center;
+    margin: 0;
+    width: 70vw;
+    justify-content:space-around;
+}
+
+    div .pizza-price, div .pizza-name{
+        font-size: 13px;
     }
 
+    div .pizza-name{
+        margin:0 .8rem;
+    }
     .pizza-list {
         left: 0;
         right: 0;
@@ -438,8 +477,8 @@ table tr td {
     }
 
     .pizza-icon {
-        width: 25%;
-        min-width: 80px;
+        width: 20%;
+        min-width: 60px;
         height: auto;
         padding-left: 4%;
     }
@@ -508,17 +547,10 @@ table tr td {
         border-bottom: dashed 1px #ffffff;
     }
 
-    .pizza-name {
-        padding-left: 1vw;
-        font-size: 12px;
-    }
     #warenkorb-icon {
         display: inline-block;
     }
-    .pizza-price {
-        font-size: 16px;
-        padding-right: 8%;
-    }
+
 
     div {
         display: block;
