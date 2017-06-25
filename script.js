@@ -2,15 +2,13 @@
  * Created by TrAn on 06.05.2017.
  */
 
-    function selectAll()
-    {
-        var selectBox = document.getElementById("pizzen");
+function selectAll() {
+    var selectBox = document.getElementById("pizzen");
 
-        for (var i = 0; i < selectBox.options.length; i++)
-        {
-            selectBox.options[i].selected = true;
-        }
+    for (var i = 0; i < selectBox.options.length; i++) {
+        selectBox.options[i].selected = true;
     }
+}
 
 function Pizza(name, price, quantity) {
 
@@ -45,9 +43,9 @@ function calcPrice(selected_pizza) {
     current_pizza = Pizza(name, price, 1);
 
     /*
-    for (var i = 0; i < list.length; i++) {
-    console.log(list[i].getAttribute("name")+'  '+ list[i].getAttribute("price") +'   '+list[i].getAttribute("quantity"));
-    } */
+     for (var i = 0; i < list.length; i++) {
+     console.log(list[i].getAttribute("name")+'  '+ list[i].getAttribute("price") +'   '+list[i].getAttribute("quantity"));
+     } */
 
 
     /*add current price to cart sum*/
@@ -91,7 +89,7 @@ function delete_all() {
 
     for (var i = list.options.length - 1; i >= 0; i--) {
         list[i].remove();
-        pizza_list.splice(i,1);
+        pizza_list.splice(i, 1);
     }
     document.getElementById('sum').innerText = '0€';
 }

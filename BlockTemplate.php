@@ -26,9 +26,11 @@
  * @author   Bernhard Kreling, <b.kreling@fbi.h-da.de> 
  * @author   Ralf Hahn, <ralf.hahn@h-da.de> 
 */
- 
+
+
 class BlockTemplate        // to do: change name of class
 {
+
     // --- ATTRIBUTES ---
 
     /**
@@ -99,6 +101,24 @@ class BlockTemplate        // to do: change name of class
      */
     public function processReceivedData()
     {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (empty($_POST["pizzen"])) {
+                $nameErr = "Name is required";
+            } else {
+                $p_selection = $_POST["pizzen"];
+                $client_data= $_POST["kundendaten"];
+                $pos_after_first_comma= strpos($client_data, ',')+ boolval(strpos($client_data, ','));  // boolval == 0: kein Komma
+                $address= substr($client_data, $pos_after_first_comma, strlen($client_data));
+
+                trim($address, " "); // remove whitespace
+                htmlspecialchars_decode($address);
+                print_r($address);
+
+                for($i =0;  $i< count($p_selection); $i++){
+                    print_r($p_selection[$i]);
+                }
+            }
+        }
         // to do: call processData() for all members
     }
 }

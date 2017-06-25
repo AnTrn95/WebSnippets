@@ -77,7 +77,7 @@ abstract class Page
     {
         $headline = htmlspecialchars($headline);
         header("Content-type: text/html; lang='de'; charset=utf-8; name='viewport'; content='width=device-width, intial-scale=1, maximum-scale=1;");
-        echo"<title>$headline</title>";
+        echo "<title>$headline</title>";
         echo "<link rel='stylesheet' type='text/css' href='styling.css'>\n";
         echo "<script type='text/javascript' src='script.js'></script>\n";
         echo "<script type='text/javascript' src='showCart.js'></script>\n";

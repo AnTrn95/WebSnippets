@@ -23,7 +23,8 @@ header {
     box-shadow: inset 1px 4px 0 rgba(0, 0, 0, 0), 0 4px 10px rgba(0, 0, 0, 0.4);
     height: 60px;
 }
-#warenkorb-icon{
+
+#warenkorb-icon {
     display: none;
     z-index: 100;
     background-image: url("image/cart-icon.png");
@@ -34,6 +35,7 @@ header {
     top: .3rem;
     right: 0;
 }
+
 .header-hl {
     display: table;
     margin: auto;
@@ -101,11 +103,12 @@ body {
     margin: 0;
     padding: 0;
 }
-.bg{
+
+.bg {
     position: fixed;
     z-index: -2;
     left: 0;
-    top:0;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-image: url('image/bg.jpg');
@@ -116,13 +119,12 @@ table td {
     padding-left: 20px;
 }
 
-
 #blur-bg {
     z-index: 1;
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     display: none;
 }
 
@@ -317,7 +319,7 @@ table tr td {
 }
 
 /*tablet view*/
-@media  (max-width:1240px) {
+@media (max-width: 1240px) {
     body {
         overflow: auto;
     }
@@ -334,12 +336,15 @@ table tr td {
     div .pizza-name, div .pizza-price {
         font-size: 16px;
     }
-    .pizza-price, .pizza-name{
-       font-size: 14px;
+
+    .pizza-price, .pizza-name {
+        font-size: 14px;
     }
-    .pizza-row{
+
+    .pizza-row {
         width: 18rem;
     }
+
     .pizza-list {
         max-width: 300px;
         width: 48vw;
@@ -383,7 +388,6 @@ table tr td {
         margin: 0;
     }
 
-
     .pizza-icon {
         margin: 0;
         width: 90px;
@@ -392,7 +396,7 @@ table tr td {
 
 }
 
-@media (max-width:680px) {
+@media (max-width: 680px) {
     * {
         letter-spacing: 0;
     }
@@ -419,10 +423,11 @@ table tr td {
         font-size: 13px;
     }
 
-    .pizza-row{
+    .pizza-row {
         margin-top: 0;
-        padding-top:0;
+        padding-top: 0;
     }
+
     .sum-order {
         font-weight: bold;
     }
@@ -451,20 +456,21 @@ table tr td {
         margin: 0 auto;
     }
 
-.pizza-row{
-    justify-self: center;
-    margin: 0;
-    width: 70vw;
-    justify-content:space-around;
-}
+    .pizza-row {
+        justify-self: center;
+        margin: 0;
+        width: 70vw;
+        justify-content: space-around;
+    }
 
-    div .pizza-price, div .pizza-name{
+    div .pizza-price, div .pizza-name {
         font-size: 13px;
     }
 
-    div .pizza-name{
-        margin:0 .8rem;
+    div .pizza-name {
+        margin: 0 .8rem;
     }
+
     .pizza-list {
         left: 0;
         right: 0;
@@ -531,7 +537,7 @@ table tr td {
     }
 
     .warenkorb-section {
-        transform: translate(0,-100%);
+        transform: translate(0, -100%);
         visibility: hidden;
         z-index: 10;
         min-height: 60vw;
@@ -550,7 +556,6 @@ table tr td {
     #warenkorb-icon {
         display: inline-block;
     }
-
 
     div {
         display: block;
