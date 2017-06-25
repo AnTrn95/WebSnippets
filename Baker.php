@@ -91,7 +91,7 @@ class Baker extends Page
         $this->getViewData();
         $this->generatePageHeader('Baker | Menu');
         include('Baker.html');
-        $this->status->generateView('pizza-list');
+        $this->status->generateView();
         // to do: call generateView() for all members
         // to do: output view of this page
         $this->generatePageFooter();

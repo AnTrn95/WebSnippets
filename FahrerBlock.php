@@ -1,127 +1,107 @@
 <?php // UTF-8 marker äöüÄÖÜß€
-include_once('./Fahrer.php');
+include_once('Fahrer.php');
 
-
-Fahrer::notify();
+if(!empty($_POST)) {
+    Fahrer::notify();
+}
 
 
 class FahrerBlock        // to do: change name of class
 {
 
-    // --- ATTRIBUTES ---
-
-    /**
-     * Reference to the MySQLi-Database that is
-     * accessed by all operations of the class.
-     */
     protected $_database = null;
     private $result;
-    // to do: declare reference variables for members 
-    // representing substructures/blocks
-
-    // --- OPERATIONS ---
-
-    /**
-     * Gets the reference to the DB from the calling page template.
-     * Stores the connection in member $_database.
-     *
-     * @param $database $database is the reference to the DB to be used
-     *
-     * @return none
-     */
+    private $address;
+    private $sum;
+    private $orderID;
     public function __construct($database)
     {
         $this->_database = $database;
-        // to do: instantiate members representing substructures/blocks
+
     }
 
-    /**
-     * Fetch all data that is necessary for later output.
-     * Data is stored in an easily accessible way e.g. as associative array.
-     *
-     * @return none
-     */
-    protected function getViewData()
+
+    public function getViewData()
     {
         // to do: fetch data for this view from the database
-        $this->result = mysqli_query($this->_database, "Select * from BestelltePizza where lower(status)= 'bestellt' OR status='im ofen' ");
+        $result = mysqli_query($this->_database, "select max(BestellungID) from Bestellung");
+        $maxID = mysqli_fetch_row($result);
+
+        echo "<div class='client-info'>";
+        for ($orderID = 1; $orderID <= $maxID[0]; $orderID++) {
+
+            $this->result = mysqli_query($this->_database, "select * from bestelltepizza inner join bestellung on BestellungID= fBestellungID where fBestellungID=$orderID and (status='unterwegs' or status='fertig' and status= ALL(select Status from bestelltepizza where fBestellungID=$orderID))");
+            if(mysqli_num_rows($this->result)) {
+
+            $this->sum = mysqli_query($this->_database, "select sum(Preis) from (Bestellung inner join BestelltePizza on BestellungID= fBestellungID) inner join Angebot on pizzaName=fPizzaName where bestellungID=$orderID group by BestellungID");
+            $this->sum = mysqli_fetch_row($this->sum)[0];
+
+                $this->generateView();
+            }
+        }
+        echo "</div>";
     }
 
-    /**
-     * Generates an HTML block embraced by a div-tag with the submitted id.
-     * If the block contains other blocks, delegate the generation of their
-     * parts of the view to them.
-     *
-     * @param $id $id is the unique (!!) id to be used as id in the div-tag
-     *
-     * @return none
-     */
-    public function generateView($id = "")
+    public function generateView()
     {
-        $this->getViewData();
-        $first_status = 'bestellt';
-        $sec_status = 'im Ofen';
-        $third_status = 'fertig';
+        $first_status = 'fertig';
+        $sec_status = 'unterwegs';
+        $third_status = 'geliefert';
         $name = null;
         $status = null;
-        $state_name = 1;
-        $formID_Counter = 1;
-
-        echo "<table class='order-status'>\n";
-        echo "<tr><th></th><th>$first_status</th><th>$sec_status</th><th>$third_status</th></tr>\n";
+        $stepCounter = 0;
+        $check1 = "";
+        $check2 = "";
+        $check3 = "";
 
         while ($row = mysqli_fetch_assoc($this->result)) {
-            $formID = $formID_Counter . '-form';
-            $check1 = "";
-            $check2 = "";
-            $check3 = "";
+            if ($stepCounter != 0) $name .= ', ';
+            else {
+                $this->orderID = 'form-'.$row['fBestellungID'];
+            }
+            $name .= $row['fPizzaName'];
 
-            $name = $row['fPizzaName'];
             $status = $row['Status'];
-            $p_id=  $row['PizzaID'];
+            $this->address = utf8_encode($row['Adresse']);
             if ($status == $first_status) $check1 = 'checked';
             if ($status == $sec_status) $check2 = 'checked';
             if ($status == $third_status) $check3 = 'checked';
-
-
-
-            echo "<form action='BaeckerStatusBlock.php' id='$formID' method='get' accept-charset='UTF-8'>";
-
-            echo "<tr onclick=document.forms['$formID'].submit();>\n";
-            echo "<td class='pizza-ordered'>$name</td>";
-            echo "<td><input title='' name='$p_id' type='radio' value='$first_status' $check1/></td>";
-            echo "<td><input title='' name='$p_id' type='radio' value='$sec_status' $check2/></td>";
-            echo "<td><input title='' name='$p_id'  type='radio' value='$third_status' $check3/></td>";
-            echo "</tr></form>";
-
-            $state_name++;
-            $formID_Counter++;
+            $stepCounter++;
         }
-        echo "</table>";
+
+        echo "<section>\n";
+        echo "<h4>$this->address</h4>\n";
+        echo "<p>$name</p>\n";
+        echo "<p>Preis: <span class='sum-order' data-price>$this->sum €</span></p>\n";
+
+        echo "<table title=''>";
+
+
+        echo "<tr><th>$first_status</th><th>$sec_status</th><th>$third_status</th></tr>\n";
+        echo "<form action='FahrerBlock.php' id='$this->orderID' method='post' accept-charset='UTF-8'>\n";
+        echo "<tr onclick=document.forms['$this->orderID'].submit();>\n";
+        echo "<td><input title='' name='$this->orderID' type='radio' value='$first_status' $check1/></td>\n";
+        echo "<td><input title='' name='$this->orderID' type='radio' value='$sec_status' $check2/></td>\n";
+        echo "<td><input title='' name='$this->orderID' type='radio' value='$third_status' $check3/></td>\n";
+        echo "</tr></form></table></section>";
+
     }
 
-    /**
-     * Processes the data that comes via GET or POST i.e. CGI.
-     * If this block is supposed to do something with submitted
-     * data do it here.
-     * If the block contains other blocks, delegate processing of the
-     * respective subsets of data to them.
-     *
-     * @return none
-     */
     public function processReceivedData()
     {
-        if(!empty($_GET)) {
-            $getVars = array_keys($_GET);
-            $p_id = $getVars[0];
-            $status = $_GET[$getVars[0]];
+        $getVars = array_keys($_POST);
+        $formID = $getVars[0];
+        $pos_after_first_comma = strpos($formID, '-') + boolval(strpos($formID, '-'));  // boolval == 0: kein Komma
+        $id = substr($formID, $pos_after_first_comma, strlen($formID));
 
-            if ($_SERVER["REQUEST_METHOD"] == "GET") {
-                mysqli_query($this->_database, "update BestelltePizza set Status='$status' where PizzaID= $p_id");
-                print_r($p_id . ' ' . $status);
-            }
-            // to do: call processData() for all members
+        $this->address = trim($this->address, " "); // remove whitespace
+        $status = $_POST[$getVars[0]];
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            mysqli_query($this->_database, "update BestelltePizza set Status='$status' where fBestellungID= $id");
         }
+        // to do: call processData() for all members
+
     }
 }
 // Zend standard does not like closing php-tag!

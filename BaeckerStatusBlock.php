@@ -10,10 +10,7 @@ class BaeckerStatusBlock        // to do: change name of class
 
     // --- ATTRIBUTES ---
 
-    /**
-     * Reference to the MySQLi-Database that is
-     * accessed by all operations of the class.
-     */
+
     protected $_database = null;
     private $result;
     // to do: declare reference variables for members 
@@ -21,42 +18,20 @@ class BaeckerStatusBlock        // to do: change name of class
 
     // --- OPERATIONS ---
 
-    /**
-     * Gets the reference to the DB from the calling page template.
-     * Stores the connection in member $_database.
-     *
-     * @param $database $database is the reference to the DB to be used
-     *
-     * @return none
-     */
+
     public function __construct($database)
     {
         $this->_database = $database;
         // to do: instantiate members representing substructures/blocks
     }
 
-    /**
-     * Fetch all data that is necessary for later output.
-     * Data is stored in an easily accessible way e.g. as associative array.
-     *
-     * @return none
-     */
     protected function getViewData()
     {
         // to do: fetch data for this view from the database
         $this->result = mysqli_query($this->_database, "Select * from BestelltePizza where lower(status)= 'bestellt' OR status='im ofen' ");
     }
 
-    /**
-     * Generates an HTML block embraced by a div-tag with the submitted id.
-     * If the block contains other blocks, delegate the generation of their
-     * parts of the view to them.
-     *
-     * @param $id $id is the unique (!!) id to be used as id in the div-tag
-     *
-     * @return none
-     */
-    public function generateView($id = "")
+    public function generateView()
     {
         $this->getViewData();
         $first_status = 'bestellt';
@@ -100,15 +75,6 @@ class BaeckerStatusBlock        // to do: change name of class
         echo "</table>";
     }
 
-    /**
-     * Processes the data that comes via GET or POST i.e. CGI.
-     * If this block is supposed to do something with submitted
-     * data do it here.
-     * If the block contains other blocks, delegate processing of the
-     * respective subsets of data to them.
-     *
-     * @return none
-     */
     public function processReceivedData()
     {
         if(!empty($_GET)) {
