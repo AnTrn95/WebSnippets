@@ -90,12 +90,12 @@ class FahrerBlock        // to do: change name of class
     public function processReceivedData()
     {
         $getVars = array_keys($_POST);
-        $formID = $getVars[0];
+        $formID = mysqli_real_escape_string($this->_database,$getVars[0]);
         $pos_after_first_comma = strpos($formID, '-') + boolval(strpos($formID, '-'));  // boolval == 0: kein Komma
         $id = substr($formID, $pos_after_first_comma, strlen($formID));
 
         $this->address = trim($this->address, " "); // remove whitespace
-        $status = $_POST[$getVars[0]];
+        $status = mysqli_real_escape_string($this->_database,$_POST[$getVars[0]]);
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_query($this->_database, "update BestelltePizza set Status='$status' where fBestellungID= $id");

@@ -94,7 +94,7 @@ class Pizzaservice extends Page
         $this->getViewData();
         $this->generatePageHeader('Pizzaservice | Menu');
         include('Pizzaservice.html');
-        $this->pizza_menu->generateView('pizza-list');
+        $this->pizza_menu->generateView();
         // to do: call generateView() for all members
         // to do: output view of this page
         $this->generatePageFooter();

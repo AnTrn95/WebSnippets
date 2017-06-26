@@ -77,7 +77,7 @@ class PizzaMenuBlock        // to do: change name of class
      *
      * @return none
      */
-    public function generateView($id = "")
+    public function generateView()
     {
         $this->getViewData();
         $name = null;

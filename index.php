@@ -1,5 +1,5 @@
 <?php // UTF-8 marker äöüÄÖÜß€
-
+session_start();
 // to do: change name 'index' throughout this file
 require_once './Page.php';
 

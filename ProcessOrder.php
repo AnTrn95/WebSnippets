@@ -1,4 +1,6 @@
 <?php // UTF-8 marker äöüÄÖÜß€
+session_start();
+
 include_once'Pizzaservice.php';
 if (!empty($_POST["pizzen"]) && !empty($_POST["kundendaten"])) {
     Pizzaservice::notify();
@@ -109,7 +111,8 @@ class ProcessOrder        // to do: change name of class
     {
         $result = mysqli_query($this->_database, "select max(BestellungID) from Bestellung");
         $maxID = mysqli_fetch_row($result);
-        print_r($this->pizza_name);
+        $_SESSION['auftragsNR'] = $maxID;
+        print_r("SEEEET");
         mysqli_query($this->_database, "insert into BestelltePizza(fBestellungID, fPizzaName) values($maxID[0], '$this->pizza_name')");
     }
 }

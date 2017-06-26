@@ -79,8 +79,8 @@ class BaeckerStatusBlock        // to do: change name of class
     {
         if(!empty($_GET)) {
             $getVars = array_keys($_GET);
-            $p_id = $getVars[0];
-            $status = $_GET[$getVars[0]];
+            $p_id = mysqli_real_escape_string($this->_database,$getVars[0]);
+            $status = mysqli_real_escape_string($this->_database,$_GET[$getVars[0]]);
 
             if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 mysqli_query($this->_database, "update BestelltePizza set Status='$status' where PizzaID= $p_id");

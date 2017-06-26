@@ -1,4 +1,5 @@
 <?php	// UTF-8 marker äöüÄÖÜß€
+session_start();
 /**
  * Class Kunde for the exercises of the EWA lecture
  * Demonstrates use of PHP including class and OO.
@@ -18,7 +19,7 @@
 
 // to do: change name 'Kunde' throughout this file
 require_once './Page.php';
-
+require_once './KundeBlock.php';
 /**
  * This is a template for top level classes, which represent 
  * a complete web page and which are called directly by the user.
@@ -35,7 +36,7 @@ class Kunde extends Page
 {
     // to do: declare reference variables for members 
     // representing substructures/blocks
-    
+    private $kunde_stats;
     /**
      * Instantiates members (to be defined above).   
      * Calls the constructor of the parent i.e. page class.
@@ -46,6 +47,7 @@ class Kunde extends Page
     protected function __construct() 
     {
         parent::__construct();
+        $this->kunde_stats= new KundeBlock($this->_database);
         // to do: instantiate members representing substructures/blocks
     }
     
@@ -86,8 +88,9 @@ class Kunde extends Page
         $this->getViewData();
         $this->generatePageHeader('Kunde | Bestellinfo');
         include('Kunde.html');
-        // to do: call generateView() for all members
-        // to do: output view of this page
+
+        $this->kunde_stats->generateView();
+
         $this->generatePageFooter();
     }
     
@@ -103,6 +106,7 @@ class Kunde extends Page
     protected function processReceivedData() 
     {
         parent::processReceivedData();
+        $this->kunde_stats->processReceivedData();
         // to do: call processReceivedData() for all members
     }
 
@@ -117,12 +121,21 @@ class Kunde extends Page
      * call it without first creating an instance of the class.
      *
      * @return none 
-     */    
+     */
+    public static function notify(){
+        try {
+            $page = new Kunde();
+            $page->processReceivedData();
+        } catch (Exception $e) {
+            header("Content-type: text/plain; charset=UTF-8");
+            echo $e->getMessage();
+        }
+    }
+
     public static function main() 
     {
         try {
             $page = new Kunde();
-            $page->processReceivedData();
             $page->generateView();
         }
         catch (Exception $e) {
