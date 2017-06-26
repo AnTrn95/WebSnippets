@@ -87,7 +87,7 @@ class ProcessOrder        // to do: change name of class
                 //print_r($address);
 
                 for ($i = 0; $i < count($p_selection); $i++) {
-                    $pos_after_first_comma = strpos($p_selection[$i], 'x') + boolval(strpos($p_selection[$i], 'x'));  // boolval == 0: kein Komma
+                    $pos_after_first_comma = strpos($p_selection[$i], '*') + boolval(strpos($p_selection[$i], '*'));  // boolval == 0: kein Komma
                     $this->pizza_name = substr($p_selection[$i], $pos_after_first_comma, strlen($p_selection[$i]));
                     $this->pizza_name = trim($this->pizza_name, " "); // remove whitespace
                     $this->pizza_name = htmlspecialchars_decode($this->pizza_name);
